@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterLog1mexp
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [iterator][mdn-iterator-protocol] which iteratively evaluates the [natural logarithm][@stdlib/math/base/special/log1mexp] of `1-exp(-|x|)`.
 
@@ -140,6 +140,24 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/math/base/special/log1mexp`][@stdlib/math/base/special/log1mexp]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of 1-exp(-|x|).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the base `b` logarithm.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log1p`][@stdlib/math/iter/special/log1p]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1+x for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log1pexp`][@stdlib/math/iter/special/log1pexp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1+exp(x) for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the exponential function.</span>
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -185,8 +203,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-special-log1mexp/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-special-log1mexp?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/math-iter-special-log1mexp.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/math-iter-special-log1mexp/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -199,7 +221,19 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
+<!-- <related-links> -->
+
 [@stdlib/math/base/special/log1mexp]: https://github.com/stdlib-js/math-base-special-log1mexp
+
+[@stdlib/math/iter/special/log]: https://github.com/stdlib-js/math-iter-special-log
+
+[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p
+
+[@stdlib/math/iter/special/log1pexp]: https://github.com/stdlib-js/math-iter-special-log1pexp
+
+[@stdlib/math/iter/special/pow]: https://github.com/stdlib-js/math-iter-special-pow
+
+<!-- </related-links> -->
 
 </section>
 
