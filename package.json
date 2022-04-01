@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/math-iter-special-log1mexp",
+  "version": "0.0.0",
+  "description": "Create an iterator which evaluates the natural logarithm of 1-exp(-|x|) for each iterated value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-special-log1mexp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "math",
+    "special function",
+    "special",
+    "function",
+    "math.log",
+    "math.log1p",
+    "ln",
+    "log1mexp",
+    "natural",
+    "logarithm",
+    "log",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
