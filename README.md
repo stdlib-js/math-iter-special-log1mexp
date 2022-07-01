@@ -34,32 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-log1mexp
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterLog1mexp = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-log1mexp@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-log1mexp@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterLog1mexp;
-})();
-</script>
+var iterLog1mexp = require( '@stdlib/math-iter-special-log1mexp' );
 ```
 
 #### iterLog1mexp( iterator )
@@ -114,14 +112,9 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-log1mexp@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterLog1mexp = require( '@stdlib/math-iter-special-log1mexp' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 1.0, {
@@ -141,11 +134,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -243,6 +231,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-iter-special-log1mexp/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-iter-special-log1mexp/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-iter-special-log1mexp/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-iter-special-log1mexp/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-iter-special-log1mexp/main/LICENSE
 
@@ -250,15 +239,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/log1mexp]: https://github.com/stdlib-js/math-base-special-log1mexp/tree/umd
+[@stdlib/math/base/special/log1mexp]: https://github.com/stdlib-js/math-base-special-log1mexp
 
-[@stdlib/math/iter/special/log]: https://github.com/stdlib-js/math-iter-special-log/tree/umd
+[@stdlib/math/iter/special/log]: https://github.com/stdlib-js/math-iter-special-log
 
-[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p/tree/umd
+[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p
 
-[@stdlib/math/iter/special/log1pexp]: https://github.com/stdlib-js/math-iter-special-log1pexp/tree/umd
+[@stdlib/math/iter/special/log1pexp]: https://github.com/stdlib-js/math-iter-special-log1pexp
 
-[@stdlib/math/iter/special/pow]: https://github.com/stdlib-js/math-iter-special-pow/tree/umd
+[@stdlib/math/iter/special/pow]: https://github.com/stdlib-js/math-iter-special-pow
 
 <!-- </related-links> -->
 
