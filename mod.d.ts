@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,18 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which iteratively evaluates the natural logarithm of \\( 1-\exp(-|x|) \\).
+* Returns an iterator which iteratively evaluates the natural logarithm of \\( 1-\exp(-|x|) \\).
 *
-* @module @stdlib/math-iter-special-log1mexp
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
+*
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
-* var uniform = require( '@stdlib/random-iter-uniform' );
-* var iterLog1mexp = require( '@stdlib/math-iter-special-log1mexp' );
+* var randu = require( `@stdlib/random/iter/randu` );
 *
-* var iter = iterLog1mexp( uniform( 0.0, 1.0 ) );
+* var iter = iterLog1mexp( randu() );
 *
 * var r = iter.next().value;
 * // returns <number>
@@ -40,12 +51,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var iterator = require( './main.js' );
+declare function iterLog1mexp( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = iterator;
+export = iterLog1mexp;
